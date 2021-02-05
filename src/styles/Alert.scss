@@ -1,0 +1,41 @@
+.wrapperAlert {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 200px;
+    background-color: #2c2e33;
+    top: 60vh;
+}
+
+.textAlert {
+    font-family: 'Gilroy Light';
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 18px;
+}
+
+#warningSign {
+    color: rgb(173, 85, 85);
+    font-size: 42px;
+}
+
+#wrapperText {
+    display: flex;
+    flex-direction: column;
+}
+
+#closeBtn {
+    position: absolute;
+    left: 95.3%;
+    top: 21px;
+    color: white;
+    font-size: 24px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
