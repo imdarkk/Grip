@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('../fonts/Gilroy-Light.woff2') format('woff2');
+}
+
 .App {
   display: flex;
   justify-content: space-between;
@@ -7,6 +17,9 @@
   text-align: center;
   background-color: #343a42;
   height: 100vh;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: none;
 }
 
 #mainWrapper {
@@ -14,42 +27,51 @@
 }
 
 #amountOfChars {
-  font-family: 'Gilroy Light';
+  font-family: 'Gilroy-Light';
   color: white;
   font-size: 22px;
 }
 
 #resultText {
-  font-family: 'Gilroy Light';
+  font-family: 'Gilroy-Light';
   color: white;
   font-size: 24px;
 }
 
 .pass {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-ExtraBold';
+  font-weight: 500;
 }
 
 #disclaimer {
-  font-family: 'Gilroy Light';
+  font-family: 'Gilroy-Light';
   font-size: 20px;
   color: rgb(173, 85, 85);
 }
 
 #discBold {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-ExtraBold';
+  font-weight: 500;
   font-size: 22px;
 }
 
 #disclaimerButton {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-ExtraBold';
   font-size: 26px;
-  font-weight: 900;
+  font-weight: 500;
   color:rgb(173, 85, 85);
   padding: 30px;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.password {
+  width: 80vw;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 @media only screen and (max-width: 800px) {
@@ -60,6 +82,15 @@
     font-size: 20px;
   }
   #resultText {
+    font-size: 20px;
+  }
+  #disclaimer {
+    font-size: 17px;
+  }
+  #discBold {
+    font-size: 18px;
+  }
+  #disclaimerButton {
     font-size: 20px;
   }
 }

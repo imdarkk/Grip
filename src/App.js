@@ -48,11 +48,12 @@ class App extends React.Component {
             Length: <span className="pass">{this.state.value}</span>
           </p>
           <div id="wrapper">
+          <div>
             {result.length > 7 ? (
               <div id="wrapperResult">
                 <span id="resultText">
                   Password: <br />
-                  <span className="pass password">{result}</span>
+                  <p className="pass password">{result}</p>
                 </span>
               </div>
             ) : (
@@ -64,11 +65,12 @@ class App extends React.Component {
                 <div id="wrapperResult">
                   <span id="resultText">
                     Password: <br />
-                    <span className="pass password">{result}</span>
+                    <p className="pass password">{result}</p>
                   </span>
                 </div>
               </div>
             )}
+            </div>
           </div>
         </div>
         <div id="wrapperDisclaimerBtn">

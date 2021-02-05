@@ -19,8 +19,8 @@ class Alert extends React.Component {
                 We suggest saving the password after using it, or using the
                 google password manager.
               </p>
-                </div>
-                <FontAwesomeIcon icon={faTimes} id="closeBtn" onClick={this.props.hide}/>
+            </div>
+            <FontAwesomeIcon icon={faTimes} id="closeBtn" onClick={this.props.hide}/>
           </div>
         );
     }

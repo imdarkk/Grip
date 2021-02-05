@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('../fonts/Gilroy-Light.woff2') format('woff2');
+}
+
 .wrapperAlert {
     position: absolute;
     display: flex;
@@ -11,7 +16,7 @@
 }
 
 .textAlert {
-    font-family: 'Gilroy Light';
+    font-family: 'Gilroy-Light';
     margin: 0;
     padding: 0;
     color: white;
@@ -37,5 +42,29 @@
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapperAlert {
+        width: 100vw;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    #warningSign {
+        font-size: 30px;
+        margin-top: -230px;
+        margin-bottom: 30px;
+    }
+    #closeBtn {
+        left: 90%;
+    }
+    #wrapperText {
+        margin: -250px 20px 0px 20px;
+    }
+    .textAlert {
+        font-size: 16px;
+        margin-top: 20px;
     }
 }
