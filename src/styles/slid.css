@@ -82,7 +82,7 @@
   background: #5895ce;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .slider {
         width: 80vw;
     }

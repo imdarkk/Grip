@@ -1,0 +1,35 @@
+.wrapperCopied {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 385px;
+    height: 100px;
+    background: #1c1c1c;
+}
+
+#check {
+    color: green;
+    font-size: 30px;
+    margin-right: 25px;
+}
+
+#copiedText {
+    color: white;
+    font-size: 22px;
+    font-family: 'Gilroy-ExtraBold';
+}
+
+@media only screen and (max-width: 700px) {
+    .wrapperCopied {
+        width: 250px;
+        height: 70px;
+    }
+    #check {
+        font-size: 24px;
+    }
+    #copiedText {
+        font-size: 16px;
+    }
+}

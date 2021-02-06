@@ -45,6 +45,12 @@
     }
 }
 
+@media only screen and (max-width: 1550px) {
+    .wrapperAlert {
+        width: 80vw;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .wrapperAlert {
         width: 100vw;

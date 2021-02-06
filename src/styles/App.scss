@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Gilroy-ExtraBold';
-  src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2');
+  font-family: "Gilroy-ExtraBold";
+  src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Gilroy-Light';
-  src: url('../fonts/Gilroy-Light.woff2') format('woff2');
+  font-family: "Gilroy-Light";
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2");
 }
 
 .App {
@@ -23,43 +23,45 @@
 }
 
 #mainWrapper {
+  display: flex;
+  flex-direction: column;
   margin-top: 40vh;
 }
 
 #amountOfChars {
-  font-family: 'Gilroy-Light';
+  font-family: "Gilroy-Light";
   color: white;
   font-size: 22px;
 }
 
 #resultText {
-  font-family: 'Gilroy-Light';
+  font-family: "Gilroy-Light";
   color: white;
   font-size: 24px;
 }
 
 .pass {
-  font-family: 'Gilroy-ExtraBold';
+  font-family: "Gilroy-ExtraBold";
   font-weight: 500;
 }
 
 #disclaimer {
-  font-family: 'Gilroy-Light';
+  font-family: "Gilroy-Light";
   font-size: 20px;
   color: rgb(173, 85, 85);
 }
 
 #discBold {
-  font-family: 'Gilroy-ExtraBold';
+  font-family: "Gilroy-ExtraBold";
   font-weight: 500;
   font-size: 22px;
 }
 
 #disclaimerButton {
-  font-family: 'Gilroy-ExtraBold';
+  font-family: "Gilroy-ExtraBold";
   font-size: 26px;
   font-weight: 500;
-  color:rgb(173, 85, 85);
+  color: rgb(173, 85, 85);
   padding: 30px;
 
   &:hover {
@@ -72,9 +74,34 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
+  -webkit-user-select: all;
+  -moz-user-select: all;
 }
 
-@media only screen and (max-width: 800px) {
+#copyBtn {
+  width: 26px;
+  height: 26px;
+  margin-left: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#reroll {
+  align-self: flex-end;
+  margin-right: 32%;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+
+  &:hover {
+    cursor: pointer;
+    animation: spin .7s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 700px) {
   .App {
     overflow: hidden;
   }
@@ -92,5 +119,17 @@
   }
   #disclaimerButton {
     font-size: 20px;
+  }
+  #reroll {
+    margin-right: 3%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
